@@ -34,16 +34,6 @@ inoremap <M-S-d> <C-o>D
 inoremap <M-y> <C-o>y
 inoremap <M-p> <C-o>p
 inoremap <M-S-p> <C-o>P
-inoremap <M-1> <C-o>1
-inoremap <M-2> <C-o>2
-inoremap <M-3> <C-o>3
-inoremap <M-4> <C-o>4
-inoremap <M-5> <C-o>5
-inoremap <M-6> <C-o>6
-inoremap <M-7> <C-o>7
-inoremap <M-8> <C-o>8
-inoremap <M-9> <C-o>9
-inoremap <M-0> <C-o>0
 
 " Delete
 inoremap <C-del> <C-o>dw
