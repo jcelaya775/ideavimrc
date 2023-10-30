@@ -36,6 +36,7 @@ inoremap <M-p> <C-o>p
 inoremap <M-S-p> <C-o>P
 
 " Delete
+nnoremap <A-BS> db
 inoremap <C-del> <C-o>dw
 inoremap <C-BS> <C-w>
 noremap <C-del> dw
