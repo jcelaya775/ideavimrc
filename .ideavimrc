@@ -1,4 +1,4 @@
-source ~/.vimrc
+"source ~/.vimrc
 let mapleader = " "
 
 " Set
@@ -19,10 +19,10 @@ vnoremap <M-h> <Esc>h
 vnoremap <M-j> <Esc>j
 vnoremap <M-k> <Esc>k
 vnoremap <M-l> <Esc>l
-inoremap <C-h> <C-o>h
-inoremap <C-j> <C-o>j
-inoremap <C-k> <C-o>k
-inoremap <C-l> <C-o>l
+"inoremap <C-h> <C-o>h
+"inoremap <C-j> <C-o>j
+"inoremap <C-k> <C-o>k
+"inoremap <C-l> <C-o>l
 inoremap <M-o> <C-o>o
 inoremap <M-S-o> <C-o>O
 inoremap <M-v> <C-o>v
@@ -126,7 +126,6 @@ nnoremap # #zz
 nnoremap <C-i> <C-i>zz
 nnoremap <C-o> <C-o>zz
 
-
 " Window switching
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -134,11 +133,12 @@ nnoremap <C-j> <C-w>j
 " Tabs
 map <leader><Tab> <Action>(RecentFiles)
 
-" Plugins
-" packadd matchit
+" Copilot
+imap <C-l> <Action>(copilot.applyInlaysNextWord)
+imap <C-A-l> <Action>(copilot.applyInlaysNextLine)
 
 Plug 'easymotion/vim-easymotion'
-imap <C-;> <Action>(AceAction)
+nmap <A-[> <Action>(AceAction)
 
 Plug 'tpope/vim-surround'
 
@@ -160,10 +160,9 @@ Plug 'preservim/nerdtree'
 let g:NERDTreeMapActivateNode="l"
 let g:NERDTreeMapJumpParent="h"
 
-Plug 'unblevable/quick-scope'
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 
-source ~/.vimrc
+Plug 'unblevable/quick-scope'
+set quick-scope
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
